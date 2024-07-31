@@ -134,27 +134,21 @@
             <div class="card bg-base-100 shadow-xl">
                 <figure><img src="images/ellipse.png" alt="Shoes" /></figure>
                 <div class="card-body">
-                  <h2 class="card-title">Ellipse</h2>
-                  <p class="text-center text-3xl">Area (A) = b x h</p>
-                  <div>
-                    <!-- parallelogram base -->
-                    <input class="w-24 text-2xl p-2 rounded-sm" type="text" name="" id="parallelogram-base" placeholder="b">
-                    <span class="mr-4 ml-2">cm</span>
-                    <!-- parallelogram height -->
-                    <input class="w-24 text-2xl p-2 rounded-sm" type="text" name="" id="parallelogram-height" placeholder="h">
-                    <span class="mr-4 ml-2">cm</span>
+                  <h2 class="card-title">Ellipse!</h2>
+                  <p>Area = π * a * b</p>
+                  <div class="flex gap-5">
+                      <input class="w-24 text-2xl p-2 rounded-sm" type="text" name="" id="ellipse-major-radius" placeholder="major">
+                      <input class="w-24 text-2xl p-2 rounded-sm" type="text" name="" id="ellipse-minor-radius" placeholder="minor">
                   </div>
-                  <!-- display parallelogram area -->
                   <div>
-                    <p class="text-2xl">Area: <span id="parallelogram-area">0</span> <span>cm</span><sup>2</sup></p>
-                 </div>
-                  <div class="card-actions">
-                    <button onclick="calculateParallelogramArea()" class="btn btn-primary w-full">Calculate</button>
+                      <p>Area: <span id="ellipse-area">0</span></p>
+                  </div>
+                  <div class="card-actions justify-end">
+                      <button onclick="calculateEllipseArea()" class="btn btn-primary w-full">calculate</button>
+                  </div>
                   </div>
                 </div>
               </div>
-            
-        </div>
         <!-- area calculation container -->
         <div class=" border-2 border-gray-700 rounded-md pl-2">
             <h3 class="text-3xl text-center p-4">Area calculation</h3>
