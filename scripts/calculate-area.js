@@ -7,10 +7,27 @@ function calculateParallelogramArea(){
     const height = getInputValueById('parallelogram-height');
     // console.log(height);
 
-    const area = base * height;
+    const parallelogramArea = base * height;
     // console.log(area);
 
-    setInnerTextById('parallelogram-area',area);
+    setInnerTextById('parallelogram-area',parallelogramArea);
+
+
+}
+
+
+function calculatePentagonArea(){
+    const perimeter = getInputValueById('pentagon-perimeter');
+    // console.log(base);
+
+    const apothem = getInputValueById('pentagon-apothem');
+    // console.log(height);
+
+    const pentagonArea = 0.5 * perimeter * apothem;
+    // console.log(area);
+
+    setInnerTextById('pentagon-area',pentagonArea);
+
 }
 
 function getInputValueById(inputFieldId){

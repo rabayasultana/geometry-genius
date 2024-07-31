@@ -18,7 +18,7 @@
         <!-- shape card container -->
         <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             <!-- Triangle  card-->
-            <div class="card w-96 bg-base-100 shadow-xl">
+            <div class="card  bg-base-100 shadow-xl">
                 <figure><img src="images/triangle.png" alt="Shoes" /></figure>
                 <div class="card-body">
                   <h2 class="card-title">Triangle</h2>
@@ -39,7 +39,7 @@
                 </div>
               </div>
             <!-- Rectangle  card-->
-            <div class="card w-96 bg-base-100 shadow-xl">
+            <div class="card  bg-base-100 shadow-xl">
                 <figure><img src="images/rectangle.png" alt="Shoes" /></figure>
                 <div class="card-body">
                   <h2 class="card-title">Rectangle</h2>
@@ -62,7 +62,7 @@
                 </div>
               </div>
             <!-- Parallelogram  card-->
-            <div class="card w-96 bg-base-100 shadow-xl">
+            <div class="card  bg-base-100 shadow-xl">
                 <figure><img src="images/parallelogram.png" alt="Shoes" /></figure>
                 <div class="card-body">
                   <h2 class="card-title">Parallelogram</h2>
@@ -84,8 +84,8 @@
                   </div>
                 </div>
               </div>
-            <!--   card-->
-            <div class="card w-96 bg-base-100 shadow-xl">
+            <!--  rhombus card-->
+            <div class="card  bg-base-100 shadow-xl">
                 <figure><img src="images/rhombus.png" alt="Shoes" /></figure>
                 <div class="card-body">
                   <h2 class="card-title">Rhombus</h2>
@@ -108,30 +108,30 @@
                 </div>
               </div>
             <!-- Pentagon  card-->
-            <div class="card w-96 bg-base-100 shadow-xl">
+            <div class="card  bg-base-100 shadow-xl">
                 <figure><img src="images/pentagon.png" alt="Shoes" /></figure>
                 <div class="card-body">
                   <h2 class="card-title">Pentagon</h2>
-                  <p class="text-center text-3xl">Area (A) = b x h</p>
+                  <p class="text-center text-3xl">Area (A) =  0.5 x p x a </p>
                   <div>
-                    <!-- parallelogram base -->
-                    <input class="w-24 text-2xl p-2 rounded-sm" type="text" name="" id="parallelogram-base" placeholder="b">
+                    <!-- pentagon perimeter -->
+                    <input class="w-24 text-2xl p-2 rounded-sm" type="text" name="" id="pentagon-perimeter" placeholder="p">
                     <span class="mr-4 ml-2">cm</span>
-                    <!-- parallelogram height -->
-                    <input class="w-24 text-2xl p-2 rounded-sm" type="text" name="" id="parallelogram-height" placeholder="h">
+                    <!-- pentagon  apothem-->
+                    <input class="w-24 text-2xl p-2 rounded-sm" type="text" name="" id="pentagon-apothem" placeholder="a">
                     <span class="mr-4 ml-2">cm</span>
                   </div>
-                  <!-- display parallelogram area -->
+                  <!-- display pentagon area -->
                   <div>
-                    <p class="text-2xl">Area: <span id="parallelogram-area">0</span> <span>cm</span><sup>2</sup></p>
+                    <p class="text-2xl">Area: <span id="pentagon-area">0</span> <span>cm</span><sup>2</sup></p>
                  </div>
                   <div class="card-actions">
-                    <button onclick="calculateParallelogramArea()" class="btn btn-primary w-full">Calculate</button>
+                    <button onclick="calculatePentagonArea()" class="btn btn-primary w-full">Calculate</button>
                   </div>
                 </div>
               </div>
             <!-- Ellipse  card-->
-            <div class="card w-96 bg-base-100 shadow-xl">
+            <div class="card bg-base-100 shadow-xl">
                 <figure><img src="images/ellipse.png" alt="Shoes" /></figure>
                 <div class="card-body">
                   <h2 class="card-title">Ellipse</h2>
@@ -156,8 +156,9 @@
             
         </div>
         <!-- area calculation container -->
-        <div class="w-96 border-2 border-gray-700 rounded-md">
+        <div class=" border-2 border-gray-700 rounded-md pl-2">
             <h3 class="text-3xl text-center p-4">Area calculation</h3>
+            <p class="text-2xl"><span id="calculated-area">0</span> <span>cm</span><sup>2</sup></p>
 
         </div>
     </div>

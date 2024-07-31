@@ -27,4 +27,8 @@ function calculateTriangleArea(){
     // display triangle area
     const triangleAreaSpan = document.getElementById('triangle-area');
     triangleAreaSpan.innerText = area;
+
+        // display calculated area
+        const calculatedArea = document.getElementById('calculated-area');
+        calculatedArea.innerText = area;
 }
